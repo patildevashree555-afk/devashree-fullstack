@@ -1,0 +1,714 @@
+/* =====================================
+   BASIC RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8f9ff,
+            #ffffff
+        );
+
+    color: #20253a;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    height: 75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #252b68,
+            #4b3fa8
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    box-shadow:
+        0 5px 20px rgba(35, 39, 90, 0.2);
+}
+
+
+.logo {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #d9d6ff;
+}
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+}
+
+
+/* =====================================
+   REGISTRATION CARD
+===================================== */
+
+.registration-box,
+.result-box {
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 15px 45px rgba(48, 54, 110, 0.12);
+
+    border: 1px solid #e6e8f5;
+}
+
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+.heading-area {
+    margin-bottom: 35px;
+}
+
+
+.small-title {
+    color: #7164d8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.heading-area h1 {
+    font-size: 38px;
+
+    margin: 8px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #252b68,
+            #7667db
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.heading-area p {
+    color: #777d92;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   SECTION TITLE
+===================================== */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin: 30px 0 20px;
+
+    color: #292f62;
+}
+
+
+.section-title span {
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #eceaff;
+
+    color: #6558c9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   FORM GRID
+===================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #464b61;
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dfe2ef;
+
+    border-radius: 12px;
+
+    background: #fafbff;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #292d40;
+
+    transition: 0.3s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #7667db;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(118, 103, 219, 0.10);
+}
+
+
+.form-group input::placeholder {
+
+    color: #a5a8b5;
+}
+
+
+/* =====================================
+   EXTRA SUBJECT
+===================================== */
+
+#extraSubjects {
+    margin-top: 20px;
+}
+
+
+.extra-subject {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 16px;
+
+    background: #f7f6ff;
+
+    border: 1px dashed #aaa2e7;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button-group {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+
+button {
+
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.generate-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #4b3fa8,
+            #7667db
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 18px rgba(76, 63, 168, 0.25);
+}
+
+
+.add-btn {
+
+    background: #eceaff;
+
+    color: #5548b0;
+}
+
+
+.clear-btn {
+
+    background: #f1f2f6;
+
+    color: #555a6d;
+}
+
+
+button:hover {
+
+    transform: translateY(-2px);
+}
+
+
+.generate-btn:hover {
+
+    box-shadow:
+        0 12px 25px rgba(76, 63, 168, 0.35);
+}
+
+
+/* =====================================
+   RESULT
+===================================== */
+
+.result-heading {
+
+    margin-bottom: 25px;
+}
+
+
+.result-heading h2 {
+
+    font-size: 30px;
+
+    margin: 7px 0;
+
+    color: #252b68;
+}
+
+
+.result-heading p {
+
+    color: #888da0;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   STUDENT INFORMATION
+===================================== */
+
+.student-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    background: #f7f8ff;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+.student-info p {
+
+    color: #555a70;
+
+    font-size: 14px;
+}
+
+
+.student-info strong {
+
+    color: #292f62;
+}
+
+
+/* =====================================
+   MARKS TABLE
+===================================== */
+
+.marks-title {
+
+    color: #292f62;
+
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+
+.marks-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.marks-table th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #4b3fa8,
+            #7667db
+        );
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+
+.marks-table td {
+
+    padding: 14px 15px;
+
+    border-bottom: 1px solid #ececf3;
+
+    color: #4c5062;
+}
+
+
+.marks-table tr:hover td {
+
+    background: #f7f7ff;
+}
+
+
+/* =====================================
+   RESULT SUMMARY
+===================================== */
+
+.result-summary {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.result-summary p {
+
+    background: #f5f5ff;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    font-size: 14px;
+
+    color: #555a70;
+}
+
+
+.result-summary strong {
+
+    display: block;
+
+    color: #292f62;
+
+    margin-bottom: 6px;
+}
+
+
+/* =====================================
+   PASS / FAIL
+===================================== */
+
+.pass {
+
+    color: #159447;
+
+    font-weight: bold;
+}
+
+
+.fail {
+
+    color: #d73737;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   PRINT BUTTON
+===================================== */
+
+.print-btn {
+
+    margin-top: 25px;
+
+    background: #252b68;
+
+    color: white;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #888da0;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+
+    header {
+
+        padding: 0 5%;
+    }
+
+
+    nav {
+
+        gap: 12px;
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+
+    .registration-box,
+    .result-box {
+
+        padding: 25px;
+    }
+
+
+    .heading-area h1 {
+
+        font-size: 30px;
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .extra-subject {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .student-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .result-summary {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .button-group button {
+
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================
+   PRINT
+===================================== */
+
+@media print {
+
+    header,
+    .registration-box,
+    footer,
+    .print-btn {
+
+        display: none;
+    }
+
+
+    body {
+
+        background: white;
+    }
+
+
+    .result-box {
+
+        box-shadow: none;
+
+        border: none;
+    }
+
+}
